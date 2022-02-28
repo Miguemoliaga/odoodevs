@@ -17,8 +17,8 @@ class lista_tareas(models.Model):
     prioridad = fields.Integer()
     urgente = fields.Boolean(compute="_value_pc", store=True)
     realizada = fields.Boolean()
+    campo_prueba = fields.Text()
     descripcion = fields.Text()
-
     #Este computo depende de la variable prioridad
     @api.depends('prioridad')
     #Funcion para calcular el valor de urgente

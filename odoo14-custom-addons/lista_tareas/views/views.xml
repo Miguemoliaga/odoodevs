@@ -13,6 +13,7 @@
           <field name="prioridad" widget="percentpie"/>
           <field name="urgente"/>
           <field name="realizada"/>
+          <field name="campo_prueba"/>
           <field name = "fecha"/>
         </tree>
       </field>
@@ -39,15 +40,19 @@
     <!-- menu categories -->
 
     <menuitem name="Users" id="lista_tareas.menu_1" parent="lista_tareas.menu_root"/>
-    <menuitem name="Group" id="lista_tareas.menu_2" parent="lista_tareas.menu_root"/>
+    <menuitem name="Menu de Miguel" id = "lista_tareas.menu3" parent="lista_tareas.menu_root"/>
+
+
+    <!-- actions -->
+    <menuitem name="List" id="lista_tareas.menu_1_list" parent="lista_tareas.menu_1" action="lista_tareas.action_window"/>
+    
+    <menuitem name="Martinez" id="lista_tareas.menu3apellido1" parent="lista_tareas.menu3" action="lista_tareas.action_window"/>
+    <menuitem name="Oliaga" id="lista_tareas.menu3apellido2" parent="lista_tareas.menu3" action="lista_tareas.action_window"/>
 
     <!-- new menu entries -->
     <menuitem name="Community" id="lista_tareas.menu_3" parent="lista_tareas.menu_root"/>
     <menuitem name="Local" id="lista_tareas.menu_2_list" parent="lista_tareas.menu_3" action="lista_tareas.action_window"/>
     <menuitem name="Global" id="lista_tareas.menu_3_list" parent="lista_tareas.menu_3" action="lista_tareas.action_window"/>
-
-    <!-- actions -->
-    <menuitem name="List" id="lista_tareas.menu_1_list" parent="lista_tareas.menu_1" action="lista_tareas.action_window"/>
     <!--<menuitem name="Server to list" id="lista_tareas" parent="lista_tareas.menu_2" action="lista_tareas.action_server"/>
     -->
   </data>
